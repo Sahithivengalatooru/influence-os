@@ -1,0 +1,38 @@
+
+---
+
+### `.gitignore`
+```gitignore
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+.venv*/
+.envrc
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (if you add a web app later)
+node_modules/
+npm-debug.log*
+.pnpm-store/
+.next/
+dist/
+coverage/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Docker (if added later)
+**/.dockerignore
+volumes/
+docker-data/
