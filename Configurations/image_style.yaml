@@ -1,0 +1,28 @@
+id: exp_image_style_v1
+name: "Carousel Cover Style: Minimal vs Gradient"
+description: "Test if a subtle gradient cover improves swipe-through."
+status: draft
+goal_metric: swipe_through_rate
+population:
+  platform: linkedin
+  audience: "operators & PMs"
+  locale: ["en"]
+post:
+  type: carousel
+  topic: "Designing evals that matter"
+  slides: 7
+  cta: "Save for later • DM 'evals' for the checklist"
+variants:
+  minimal:
+    cover_caption: "Evals that matter"
+    style: "minimal"
+  gradient:
+    cover_caption: "Evals that matter"
+    style: "gradient"
+metrics:
+  - swipe_through_rate
+  - saves
+  - comments
+stopping_rules:
+  min_impressions: 1500
+  max_days: 10
