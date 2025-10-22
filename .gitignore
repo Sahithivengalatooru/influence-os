@@ -36,3 +36,6 @@ coverage/
 **/.dockerignore
 volumes/
 docker-data/
+venv/
+.venv/
+__pycache__/
