@@ -25,7 +25,9 @@ export default function MarketingPage() {
         </p>
         <div className="flex gap-3 flex-wrap">
           {links.map(l => (
-            <Link key={l.href} href={l.href} className="rounded-lg border px-4 py-2">{l.label}</Link>
+            <Link key={l.href} href={l.href as any} className="rounded-lg border px-4 py-2">
+  {l.label}
+</Link>
           ))}
         </div>
       </div>
