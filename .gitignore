@@ -39,3 +39,5 @@ docker-data/
 venv/
 .venv/
 __pycache__/
+.vercel/
+.github/workflows/
