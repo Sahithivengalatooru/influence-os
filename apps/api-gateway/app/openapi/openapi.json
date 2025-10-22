@@ -1,0 +1,9 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Influence OS API v1 (prototype)",
+    "version": "0.1.0",
+    "description": "Pre-exported OpenAPI placeholder. Prefer hitting /v1/openapi.json at runtime."
+  },
+  "paths": {}
+}

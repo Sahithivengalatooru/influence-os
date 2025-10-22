@@ -1,0 +1,13 @@
+topic,hashtag,score
+Agentic RAG for enterprise search,#rag,0.94
+Agentic RAG for enterprise search,#agents,0.88
+Agentic RAG for enterprise search,#enterpriseSearch,0.73
+Agentic RAG for enterprise search,#retrieval,0.69
+Designing evals that matter,#evals,0.91
+Designing evals that matter,#measurement,0.74
+Designing evals that matter,#llmops,0.71
+Agentic workflows vs pipelines,#agentic,0.86
+Agentic workflows vs pipelines,#workflows,0.77
+We cut RAG latency 40%,#latency,0.83
+We cut RAG latency 40%,#optimization,0.76
+Growth checklist,#growth,0.80

@@ -1,0 +1,36 @@
+id: exp_headline_variants_v1
+name: "Headline Variants: A vs B"
+description: "Compare two post headlines for CTR and saves."
+status: draft # draft | running | stopped
+goal_metric: ctr
+secondary_metrics:
+  - saves
+  - comments
+population:
+  platform: linkedin
+  audience: "AI/product builders"
+  locale: ["en"]
+exposure:
+  percent: 100 # % of eligible impressions included
+assignment:
+  method: deterministic_sha256_mod2 # stable, user_id -> arm A/B
+post:
+  type: text
+  topic: "Agentic RAG for enterprise search"
+  brand_voice: "confident, friendly, concise"
+variants:
+  A:
+    headline: "Agentic RAG that actually ships: our 3 lessons"
+    body_hint: "Keep it to 140–180 words; add a concrete example."
+  B:
+    headline: "We cut RAG latency 40%—here’s the playbook"
+    body_hint: "Lead with the measurable outcome; close with a CTA."
+success:
+  primary: ctr
+  lift_target: 0.15 # +15% vs baseline
+stopping_rules:
+  min_impressions: 2000
+  max_days: 14
+  decision_metric: ctr
+notes:
+  - "If tie within ±2% after max_days, prefer variant with more saves."
